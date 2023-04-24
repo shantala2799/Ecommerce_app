@@ -8,7 +8,7 @@ import cors from 'cors'
 import productRoutes from "./routes/productRoutes.js"
 import path from 'path'
 import exp from 'constants';
-import {fileURLToPath} from 'path';
+import { fileURLToPath } from 'url';
 
 // Configure dotenv
 dotenv.config();
