@@ -8,12 +8,17 @@ import cors from 'cors'
 import productRoutes from "./routes/productRoutes.js"
 import path from 'path'
 import exp from 'constants';
+import {fileURLToPath} from 'path';
 
 // Configure dotenv
 dotenv.config();
 
 // database config
 mongoDB()
+
+//esmodule fix
+const __filename=fileURLToPath(import.meta.url)
+const __dirname=path.dirname(__filename)
 
 // rest objects
 const app = express();
